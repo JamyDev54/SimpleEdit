@@ -1,0 +1,31 @@
+name: SimpleEdit
+main: SimpleEdit\Main
+version: 1.0.0
+api: 5.42.1
+author: MatthieuPN
+commands:
+  wand:
+    description: "Donne la baguette de sélection"
+    usage: "/wand"
+    permission: simpleedit.command.wand
+  change:
+    description: "Change tous les blocs de la sélection"
+    usage: "/change <air|stone|dirt|grass|cobble|planks>"
+    permission: simpleedit.command.change
+  cut:
+    description: "Coupe la sélection (remplace par air)"
+    usage: "/cut"
+    permission: simpleedit.command.cut
+  undo:
+    description: "Annule la dernière modification"
+    usage: "/undo"
+    permission: simpleedit.command.undo
+permissions:
+  simpleedit.command.wand:
+    default: op
+  simpleedit.command.change:
+    default: op
+  simpleedit.command.cut:
+    default: op
+  simpleedit.command.undo:
+    default: op
